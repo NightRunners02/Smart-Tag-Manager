@@ -172,7 +172,9 @@ Dibuat dengan ❤️ oleh **Night (Nightrunners02)**
 Jika Anda menyukai proyek ini, jangan lupa ⭐ berikan star pada repository ini!
 
 </div>
+
 ---
+
 <details> 
   <summary>
   <h2> ⛓️‍💥 Misc / Lain-lain</h2> 
