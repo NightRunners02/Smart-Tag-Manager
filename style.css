@@ -98,6 +98,7 @@ header {
 }
 
 /* Add Card (Index) - Fixed Position & Responsive */
+/* --- Add Card (Index) - Fixed Position & Responsive for Mobile --- */
 .add-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -190,9 +191,11 @@ header {
 /* --- Mobile Responsif --- */
 @media (max-width: 768px) {
   .add-card {
-    padding: 1.5rem;
+    padding: 1.2rem;
     max-width: 90%;
     transform: translate(-50%, -50%) scale(0.95);
+    max-height: 80vh;
+    overflow-y: auto;
   }
 
   .add-card:hover {
@@ -222,7 +225,13 @@ header {
     padding: 0.7rem 1.2rem;
     font-size: 0.95rem;
   }
+
+  /* Perbaiki body agar tidak scroll horizontal */
+  body {
+    overflow-x: hidden;
+  }
 }
+
 /* Tags List (Tags.html) */
 .tags-list {
   display: flex;
@@ -695,6 +704,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: background 0.3s;
+  z-index: 101;
 }
 
 .menu-toggle:hover {
@@ -723,13 +733,14 @@ header {
   color: #ffcc00;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar {
     position: fixed;
     top: 70px;
     right: -100%;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     width: 80%;
     height: calc(100vh - 70px);
@@ -738,6 +749,8 @@ header {
     z-index: 99;
     align-items: center;
     justify-content: flex-start;
+    overflow-y: auto;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .navbar.active {
@@ -750,9 +763,20 @@ header {
     margin-bottom: 1.5rem;
     width: 100%;
     text-align: center;
+    padding: 0.8rem;
+    border-radius: 10px;
+  }
+
+  .navbar a:hover {
+    background: rgba(255, 204, 0, 0.2);
   }
 
   .menu-toggle {
     display: block;
+  }
+
+  /* Pastikan tidak ada overflow horizontal */
+  body {
+    overflow-x: hidden;
   }
 }
