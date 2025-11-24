@@ -43,6 +43,9 @@ header {
   font-weight: 700;
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .logo span {
@@ -97,7 +100,6 @@ header {
   color: #ffcc00;
 }
 
-/* Add Card (Index) - Fixed Position & Responsive */
 /* --- Add Card (Index) - Fixed Position & Responsive for Mobile --- */
 .add-card {
   background: rgba(255, 255, 255, 0.08);
@@ -114,7 +116,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 5; /* <-- GANTI JADI 1000 */
   background: linear-gradient(135deg, rgba(255, 0, 0, 0.2), rgba(100, 0, 255, 0.2));
 }
 
@@ -690,32 +692,46 @@ header {
   }
 }
 
-/* --- Mobile Menu Toggle --- */
+/* --- Menu Toggle Baru - Modern & Glow Effect --- */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffcc00;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s;
-  z-index: 101;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000; /* <-- PASTIKAN TETAP 1003 */
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+  animation: pulse 2s infinite;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .menu-toggle:hover {
-  background: rgba(255, 204, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 204, 0, 1);
 }
 
 .menu-toggle.active {
-  background: #ffcc00;
+  background: #ff9800;
   color: #1a2a6c;
+  box-shadow: 0 0 30px rgba(255, 152, 0, 1);
 }
 
+@keyframes pulse {
+  0% { box-shadow: 0 0 20px rgba(255, 204, 0, 0.8); }
+  50% { box-shadow: 0 0 40px rgba(255, 204, 0, 1); }
+  100% { box-shadow: 0 0 20px rgba(255, 204, 0, 0.8); }
+}
+/* --- Navbar Mobile - Fixed & Above All --- */
 .navbar {
   display: flex;
   gap: 2rem;
@@ -733,24 +749,26 @@ header {
   color: #ffcc00;
 }
 
-/* Mobile Styles */
+/* --- Navbar Mobile - Slide from Right --- */
 @media (max-width: 768px) {
   .navbar {
     position: fixed;
-    top: 70px;
+    top: 0;
     right: -100%;
-    flex-direction: column;
+    height: 100vh;
+    width: 80%;
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
-    width: 80%;
-    height: calc(100vh - 70px);
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     transition: right 0.3s ease;
-    z-index: 99;
+    z-index: 1002; /* <-- GANTI JADI 1002 */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     overflow-y: auto;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
   }
 
   .navbar.active {
@@ -765,6 +783,7 @@ header {
     text-align: center;
     padding: 0.8rem;
     border-radius: 10px;
+    transition: background 0.2s;
   }
 
   .navbar a:hover {
@@ -773,10 +792,5 @@ header {
 
   .menu-toggle {
     display: block;
-  }
-
-  /* Pastikan tidak ada overflow horizontal */
-  body {
-    overflow-x: hidden;
   }
 }
