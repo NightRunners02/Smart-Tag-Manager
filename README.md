@@ -114,12 +114,12 @@ Smart-Tag-Manager/
 
 ## 🛠️ Teknologi yang Digunakan
 
-* **HTML5** — Struktur UI
-* **CSS3** — Styling modern (glitch, blur, gradient, glassmorphism)
-* **JavaScript** — Interaktivitas dan logika aplikasi
-* **localStorage** — Penyimpanan data lokal
-* **Particles.js** — Efek background dinamis
-* **Font Awesome** — Ikon
+* **HTML5** - Struktur UI
+* **CSS3** - Styling modern (glitch, blur, gradient, glassmorphism)
+* **JavaScript** - Interaktivitas dan logika aplikasi
+* **localStorage** - Penyimpanan data lokal
+* **Particles.js** - Efek background dinamis
+* **Font Awesome** - Ikon
 
 ---
 
