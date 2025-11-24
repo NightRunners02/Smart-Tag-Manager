@@ -10,7 +10,7 @@
 <br>
 
 **Smart Tag Manager** adalah aplikasi web sederhana namun powerful untuk mengelola tag secara cepat, modern, dan tersinkronisasi.  
-Aplikasi ini menggunakan penyimpanan lokal browser (`localStorage`), sehingga data Anda aman tanpa server eksternal.
+Aplikasi ini menggunakan penyimpanan lokal browser (`localStorage`), sehingga data Anda aman tanpa server eksternal 1.
 
 🌐 **Live Preview:**  
 https://nightrunners02.github.io/Smart-Tag-Manager/
