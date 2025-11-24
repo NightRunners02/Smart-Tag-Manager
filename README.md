@@ -1,6 +1,3 @@
-# **README.md**
-
-````markdown
 # Smart Tag Manager
 
 <div align="center">
@@ -175,7 +172,7 @@ Dibuat dengan ❤️ oleh **Night (Nightrunners02)**
 Jika Anda menyukai proyek ini, jangan lupa ⭐ berikan star pada repository ini!
 
 </div>
-```
+
 
 
 
