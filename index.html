@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Tag Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Background Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo" data-text="TagManager">Tag<span>Manager</span> <span class="version" data-text="v1.0">v1.0</span></a>
+    <div class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="tags.html">Tags</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+<!-- Main Content -->
+<section class="section">
+  <h2 class="section-title">Kelola <span>Tags</span> Anda</h2>
+
+  <!-- Form Tambah Tag -->
+  <div class="add-card">
+    <div class="add-icon">
+      <i class="fas fa-plus-circle"></i>
+    </div>
+    <h3>Tambah Tag Baru</h3>
+    <div class="input-group">
+      <input
+        type="text"
+        id="tagInput"
+        placeholder="Contoh: penting, proyek, ide..."
+        autocomplete="off"
+      />
+      <button id="addTagBtn" class="btn">Tambah Tag</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Custom Alert Modal -->
+  <div id="customAlert" class="custom-alert hidden">
+    <div class="alert-content">
+      <div class="alert-icon" id="alertIcon">⚠️</div>
+      <p id="alertMessage">Tag ini sudah ada!</p>
+      <div class="alert-buttons">
+        <button id="alertConfirm" class="btn alert-btn confirm">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
