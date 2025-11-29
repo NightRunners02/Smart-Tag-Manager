@@ -1,4 +1,4 @@
-# Smart Tag Manager 3213
+# Smart Tag Manager
 
 <div align="center">
 
