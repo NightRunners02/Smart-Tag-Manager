@@ -1,4 +1,4 @@
-# Smart Tag Manager1
+# Smart Tag Manager
 
 <div align="center">
 
