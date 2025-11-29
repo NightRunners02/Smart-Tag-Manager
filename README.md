@@ -1,4 +1,4 @@
-# Smart Tag Managerjawa
+# Smart Tag Manager
 
 <div align="center">
 
