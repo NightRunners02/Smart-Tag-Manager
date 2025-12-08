@@ -1,4 +1,4 @@
-# Smart Tag Manager 72w35
+# Smart Tag Manager
 
 <div align="center">
 
